@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="no_tools">"您没有魔法棒了"! </string>
+    <string name="get_tool">"恭喜你，获得1个魔法棒的奖励"</string>
+    <string name="tool_help">选择一个外星人，来替换下面任意一格的外星人</string>
+
+</resources>

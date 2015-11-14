@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <drawable name="payment_uucun_darkgray">#dadada</drawable>
+    <drawable name="payment_uucun_white">#FFFFFFFF</drawable>
+     <color name = "payment_uucun_transparent" >#9000</color>
+     <color name="payment_uucun_ok_btn_color">#315675</color>
+     <color name="payment_uucun_dialog_border_color">#1B66AB</color>      
+     
+    
+</resources>

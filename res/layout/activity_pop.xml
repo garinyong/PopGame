@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_shop"
+    android:gravity="center_horizontal" >
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_coin_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/tv_coin"
+            android:gravity="center_vertical"
+            android:paddingLeft="35dp"
+            android:textColor="@color/txtcolorwhite"
+            android:textSize="19sp" />
+
+        <ImageView
+            android:id="@+id/img_prop5_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_skill5" />
+
+        <ImageView
+            android:id="@+id/img_prop4_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/img_prop5_count"
+            android:background="@drawable/btn_skill4" />
+
+        <ImageView
+            android:id="@+id/img_prop3_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/img_prop4_count"
+            android:background="@drawable/btn_skill3" />
+
+        <ImageView
+            android:id="@+id/img_prop2_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/img_prop3_count"
+            android:background="@drawable/btn_skill2" />
+
+        <ImageView
+            android:id="@+id/img_prop1_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/img_prop2_count"
+            android:background="@drawable/btn_skill1" />
+
+        <TextView
+            android:id="@+id/tv_propcount_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_prop1_count"
+            android:layout_alignRight="@id/img_prop1_count"
+            android:layout_marginBottom="-2dp"
+            android:background="@drawable/count_bar"
+            android:gravity="center"
+            android:textColor="@color/txtcolorwhite"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_propcount_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_prop2_count"
+            android:layout_alignRight="@+id/img_prop2_count"
+            android:layout_marginBottom="-2dp"
+            android:background="@drawable/count_bar"
+            android:gravity="center"
+            android:textColor="@color/txtcolorwhite"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_propcount_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_prop3_count"
+            android:layout_alignRight="@id/img_prop3_count"
+            android:layout_marginBottom="-2dp"
+            android:background="@drawable/count_bar"
+            android:gravity="center"
+            android:textColor="@color/txtcolorwhite"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_propcount_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_prop4_count"
+            android:layout_alignRight="@id/img_prop4_count"
+            android:layout_marginBottom="-2dp"
+            android:background="@drawable/count_bar"
+            android:gravity="center"
+            android:textColor="@color/txtcolorwhite"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_propcount_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_prop5_count"
+            android:layout_alignRight="@id/img_prop5_count"
+            android:layout_marginBottom="-2dp"
+            android:background="@drawable/count_bar"
+            android:gravity="center"
+            android:textColor="@color/txtcolorwhite"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+     <ListView
+        android:id="@+id/lv_props"
+        android:layout_width="290dp"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom_layout"
+        android:layout_marginTop="75dp"
+        android:layout_centerHorizontal="true"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="15dp"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"
+          >
+    </ListView>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        layout="@layout/achievement_item"
+         />
+    -->
+
+</RelativeLayout>

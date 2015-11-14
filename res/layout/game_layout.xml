@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_play_ground1" >
+
+    <TextView
+        android:id="@+id/tv_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_level"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_maxscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_maxscore"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btn_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bg_music_off" />
+
+    <TextView
+        android:id="@+id/tv_target_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_maxscore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_currentscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_target_score"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/bg_currentscore"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_add_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_currentscore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btn_show_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_currentscore"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_show_menu" />
+
+    <TextView
+        android:id="@+id/tv_tool_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btn_show_menu"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_tool_num"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <GridView
+        android:id="@+id/gd_game"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:columnWidth="40dp"
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:listSelector="#00000000"
+        android:numColumns="7"
+        android:stretchMode="none"
+        android:verticalSpacing="1dp" />
+
+    <com.haogame.popet.surfaceview.ParticleView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bootombar" />
+
+    
+
+    <ImageView
+        android:id="@+id/img_win1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/tongguan_img1"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_win2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/tongguan_img2"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/gameover_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+          >
+
+        <ImageView
+            android:id="@+id/img_gameover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_gameover" />
+
+        <ImageView
+            android:id="@+id/img_gameover_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_gameover"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_gameover_word" />
+
+        <Button
+            android:id="@+id/btn_restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img_gameover"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/bg_restart"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img_gameover"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/btn_bg_restart"
+            android:visibility="invisible"
+             />
+
+       
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_reach_targetscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gd_game"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_reach_targetscore"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_reach_targetscore_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gd_game"
+        android:layout_marginRight="-60dp"
+        android:layout_toLeftOf="@+id/img_reach_targetscore"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_end_add_score1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:textColor="#000000"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_end_add_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#ffff00"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_maxscore"
+        layout="@layout/game_top_menu_layout" />
+
+</RelativeLayout>

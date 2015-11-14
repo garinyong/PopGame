@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="172dp"
+    android:background="@drawable/bg_revive" >
+    <LinearLayout
+        android:id="@+id/fuhuo_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/tv_fuhuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_fuhuo"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ProgressBar
+            android:id="@+id/fuhuo_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="145dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="5dp"
+            android:max="120"
+            android:progress="120"
+            android:progressDrawable="@drawable/bg_fuhuotimebar" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_fuhuo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_fuhuo_selector" />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="no_tools"> マジックＥＴが足りない; </string>
+    <string name="get_tool">おめでとう、一つマジックＥＴをゲット</string>
+    <string name="tool_help">ETを選んで、ゲームシーンのＥＴを入り替え.</string>
+
+</resources>

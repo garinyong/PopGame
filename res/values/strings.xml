@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">POP ET</string>
+    <string name="no_tools">Insufficient magic ET. </string>
+    <string name="get_tool">"Well Done! Get 1 magic ET."</string>
+    <string name="tool_help">Select ET，Replace game scene\'s ET.</string>
+    <string name="payment_uucun_app_name">uupay_fee_jar_test</string>
+    <string name="payment_uucun_ok">确定</string>
+    <string name="payment_uucun_cancel">取消</string>
+    <string name="payment_uucun_update">更新</string>
+    <string name="payment_uucun_plugin_update">插件更新</string>
+    <string name="payment_uucun_plugin_update_text">需要更新此插件,才可以进行使用,插件大小为:%s</string>
+    <string name="payment_uucun_pay_tips">资费提示</string>
+    <string name="payment_uucun_network_tips">网络提示</string>
+    <string name="payment_uucun_set_network">设置网络</string>
+    <string name="payment_uucun_network_tips_content">您需要将网络设置为cmwap，才能继续进行付费操作</string>
+    <string name="pro_text">仅需%1$d元即可购买%2$d个魔法，\n魔法可以将当前选择的ET\n随机变化成另外一种ET</string>
+    <string name="jihuo_text">仅需要花费4元激活游戏，即可\n体验后续关卡!</string>
+   <string name="fuhuo_text">"仅需2元即可原地复活！"</string>
+    <string name="text_fuhuo">"使用复活可以继续当前关卡"</string>
+</resources>
