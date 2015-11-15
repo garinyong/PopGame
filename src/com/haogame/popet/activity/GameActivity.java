@@ -4,17 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.haogame.popet.Constant;
-import com.haogame.popet.PayUtil;
-import com.haogame.popet.PopETApp;
-import com.haogame.popet.SoundManager;
-import com.haogame.popet.PayUtil.PayResultListener;
-import com.haogame.popet.adapter.GameAdapter;
-import com.haogame.popet.entity.GameData;
-import com.haogame.popet.entity.Item;
-import com.haogame.popet.surfaceview.ParticleView;
-
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnKeyListener;
@@ -46,7 +37,16 @@ import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.haogame.popet.Constant;
+import com.haogame.popet.PayUtil;
+import com.haogame.popet.PayUtil.PayResultListener;
+import com.haogame.popet.PopETApp;
 import com.haogame.popet.R;
+import com.haogame.popet.SoundManager;
+import com.haogame.popet.adapter.GameAdapter;
+import com.haogame.popet.entity.GameData;
+import com.haogame.popet.entity.Item;
+import com.haogame.popet.surfaceview.ParticleView;
 
 public class GameActivity extends Activity {
 	private Button btnMusic;
@@ -618,6 +618,67 @@ public class GameActivity extends Activity {
 				break;
 			case TAG_BTN_ADD_TOOLS:
 
+			int proIndex = 1;
+				
+				AlertDialog.Builder payDialog=new AlertDialog.Builder(GameActivity.this);  
+				payDialog.setMessage("您确定要购买"+ PayUtil.PRO_COUNT[proIndex] + "个魔法棒吗？");
+				  
+				payDialog.setPositiveButton("确定", new DialogInterface.OnClickListener() {  
+		              
+		            @Override  
+		            public void onClick(DialogInterface dialog, int which) {  
+		                // TODO Auto-generated method stub  
+		            	
+		            	
+						PayUtil.payWithProductIndex(GameActivity.this,
+								1, new PayResultListener() {
+
+									@Override
+									public void onResut(int state, int proIndex) {
+										// TODO Auto-generated method stub
+										switch (state) {
+										case PayUtil.PAY_STATE_SUCCESS:
+											app.saveChangeColorNum(app.getChangeColorNum()
+													+ PayUtil.PRO_COUNT[proIndex]);
+											break;
+										case PayUtil.PAY_STATE_FAILED:
+
+											break;
+										}
+
+									}
+
+								}
+
+						);
+
+
+		                   
+		            }  
+		        });  
+				payDialog.setNegativeButton("取消", new DialogInterface.OnClickListener()
+				{
+
+					@Override
+					public void onClick(DialogInterface arg0, int arg1) {
+						// TODO Auto-generated method stub
+						
+					}
+					
+				});
+ 
+				payDialog.show();
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 				startActivity(new Intent(GameActivity.this, ShopActivity.class));
 				break;
 

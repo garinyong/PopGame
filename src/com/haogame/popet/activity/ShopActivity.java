@@ -1,23 +1,12 @@
 package com.haogame.popet.activity;
 
-import java.util.HashMap;
-
-import org.hj20150901.lib.HejuHuafeiCallback;
 import org.hj20150901.lib.HejuInit;
-import org.hj20150901.lib.HejuInstance;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import com.haogame.popet.Constant;
 import com.haogame.popet.PayUtil.PayResultListener;
 import com.haogame.popet.PopETApp;
 import com.haogame.popet.SoundManager;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -26,8 +15,6 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import com.haogame.popet.R;
 import com.haogame.popet.PayUtil;
 

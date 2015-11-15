@@ -39,7 +39,7 @@ public class PayUtil {
 		params.put("debug", "1");// 调试信息toast0关闭1开启
 		params.put("ShopActivity", "com.haogame.popet.activity.ShopActivity");// 寄主activity路径+名称
 		HejuInstance mHejuHuafei = new HejuInstance();
-		 final ProgressDialog dialog = ProgressDialog.show(context, null, "正在处理数据，请稍后");
+		 final ProgressDialog dialog = ProgressDialog.show(context, null, "正在处理请求，请稍后");
 		mHejuHuafei.pay(context, params, new HejuHuafeiCallback() {
 			
 			@Override
