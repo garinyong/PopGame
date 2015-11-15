@@ -668,18 +668,8 @@ public class GameActivity extends Activity {
 				});
  
 				payDialog.show();
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				startActivity(new Intent(GameActivity.this, ShopActivity.class));
+				 
+//				startActivity(new Intent(GameActivity.this, ShopActivity.class));
 				break;
 
 			case TAG_BTN_SHOW_MENU:
